@@ -9,17 +9,23 @@ Supervisord was chosen over systemd due to compatibility with containers.
 docker build -t mysupervisord . && docker run -i -t --name mysupd mysupervisord
 ```
 
-### Build container
+#### Build container
 ```
 docker build -t mysupervisord .
 ```
 
-### Run container
+#### Run container
 ```
 docker run -i -t --name mysupd mysupervisord
 ```
 
-## Join container
+### Join container
 ```
 docker exec -it mysupd bash
 ```
+
+## Apps
+
+| App | Description |
+| --- | ----------- |
+|[bash-date](bash-date)|Call linux date command for supervisord logging to file|
