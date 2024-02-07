@@ -1,16 +1,17 @@
-name: Docker Image CI
+name: Required workflow
 
 on:
+  push:
+    branches:
+      - main
+  pull_request:
   merge_group:
   workflow_call:
   workflow_dispatch:
 
 jobs:
-
-  build:
-
+  Required-Steps:
     runs-on: ubuntu-latest
-
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
