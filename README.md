@@ -29,3 +29,4 @@ docker exec -it supdpg bash
 | App | Description |
 | --- | ----------- |
 |[bash-date](bash-date)|Call linux date command for supervisord logging to file|
+|[py-vcan-pub](py-vcan-pub)|Publish an incrementing number to vcan0|
