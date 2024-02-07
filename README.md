@@ -6,22 +6,22 @@ Supervisord was chosen over systemd due to compatibility with containers.
 
 ## Build and run
 ```
-docker build -t mysupervisord . && docker run -i -t --name mysupd mysupervisord
+docker build -t supervisord-playground . && docker run -i -t --name supdpg --rm supervisord-playground
 ```
 
 #### Build container
 ```
-docker build -t mysupervisord .
+docker build -t supervisord-playground .
 ```
 
 #### Run container
 ```
-docker run -i -t --name mysupd mysupervisord
+docker run -i -t --name supdpg --rm supervisord-playground
 ```
 
 ### Join container
 ```
-docker exec -it mysupd bash
+docker exec -it supdpg bash
 ```
 
 ## Apps
