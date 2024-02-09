@@ -29,3 +29,9 @@ docker exec -it supdpg bash
 | App | Description |
 | --- | ----------- |
 |[bash-date](bash-date)|Call linux date command for supervisord logging to file|
+
+
+## Notes
+
+### Other Containers
+- docker run -it -p 1883:1883 -p 9001:9001 -v mosquitto.conf:/mosquitto/config/mosquitto.conf eclipse-mosquitto
