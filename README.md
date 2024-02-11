@@ -35,3 +35,5 @@ docker exec -it supdpg bash
 
 ### Other Containers
 - docker run -it -p 1883:1883 -p 9001:9001 -v mosquitto.conf:/mosquitto/config/mosquitto.conf eclipse-mosquitto
+
+- docker run -it -v mosquitto.conf:/mosquitto/config/mosquitto.conf eclipse-mosquitto
